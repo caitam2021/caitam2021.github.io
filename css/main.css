@@ -33,7 +33,7 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Dancing Script', cursive;
 }
 
 section {
@@ -69,8 +69,16 @@ section h3.section-subheading {
 }
 
 .btn-xl {
-  font-size: 18px;
-  padding: 20px 40px;
+  font-size: 9px;
+  padding: 10px 20px;
+}
+
+
+@media (min-width: 768px) {
+  .btn-xl {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
 }
 
 .btn-primary:active, .btn-primary:focus {
@@ -139,12 +147,10 @@ img::-moz-selection {
 @media (min-width: 992px) {
   #mainNav {
     /*padding-top: 25px;*/
-    padding-bottom: 25px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent;
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
@@ -161,7 +167,7 @@ img::-moz-selection {
     background-color: #212529;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.25em;
+    font-size: 1.5em;
     padding: 12px 0;
   }
 }
@@ -191,7 +197,7 @@ header.masthead .intro-text .intro-lead-in {
   /*font-style: italic;*/
   line-height: 24px;
   margin-bottom: 24px;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Dancing Script', cursive;
 }
 
 header.masthead .intro-text .intro-heading {
@@ -210,11 +216,11 @@ header.masthead .intro-text .intro-heading {
     padding-bottom: 200px;
   }
   header.masthead .intro-text .intro-lead-in {
-    font-size: 30px;
+    font-size: 36px;
     font-style: regular;
-    line-height: 30px;
-    margin-bottom: 10px;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 36px;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
   }
   header.masthead .intro-text .intro-heading {
     font-size: 60px;
