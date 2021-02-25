@@ -31,6 +31,17 @@ a:hover {
   color: white !important;
 }
 
+#storyPic {
+  background-color: #212529;
+  background-image: url("../img/site/Picture1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+
+
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-family: 'Dancing Script', cursive;
@@ -187,22 +198,7 @@ header.masthead {
   background-size: cover;
 }
 
-@media (min-width: 768px) {
 
-
-  header.masthead {
-    text-align: left;
-    color: Black;
-    background-image: url("../img/site/Picture10.jpeg");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-}
 
 header.masthead .intro-text {
   padding-top: 200px;
@@ -214,7 +210,7 @@ header.masthead .intro-text .intro-lead-in {
   /*font-style: italic;*/
   line-height: 24px;
   margin-bottom: 8px;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Rancho', 'Dancing-Script', cursive;
 }
 
 header.masthead .intro-text .intro-heading {
@@ -223,8 +219,7 @@ header.masthead .intro-text .intro-heading {
   line-height: 48px;
   margin-bottom: 25px;
   /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
-
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Rancho', 'Dancing-Script', cursive;
 }
 
 @media (min-width: 768px) {
@@ -233,18 +228,18 @@ header.masthead .intro-text .intro-heading {
     padding-bottom: 200px;
   }
   header.masthead .intro-text .intro-lead-in {
-    font-size: 36px;
+    font-size: 45px;
     font-style: regular;
-    line-height: 36px;
+    line-height: 45px;
     margin-bottom: 20px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Rancho', 'Dancing-Script', cursive;
   }
   header.masthead .intro-text .intro-heading {
-    font-size: 60px;
+    font-size: 90px;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 90px;
     margin-bottom: 20px;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Rancho', 'Dancing-Script', cursive;
   }
 }
 
@@ -704,6 +699,7 @@ header.subpage .intro-text .intro-heading {
     width: 200px;
     height: 200px;
     margin-left: -75px;
+    object-fit: cover;
   }
 
   .timeline > li .timeline-image h4 {
