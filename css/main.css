@@ -44,15 +44,21 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  font-family: 'Dancing Script', cursive;
+  font-family: cursive;;
 }
 
 section {
   padding: 60px 0;
 }
 
+section h1.section-heading {
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
 section h2.section-heading {
-  font-size: 40px;
+  font-size: 32px;
   margin-top: 0;
   margin-bottom: 15px;
 }
@@ -135,7 +141,7 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
   color: white;
-  font-family: 'Dancing Script', cursive;
+  font-family: cursive;;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -326,7 +332,7 @@ header.subpage .intro-text .intro-heading {
 
 #subNav .navbar-brand {
   color: white;
-  font-family: 'Dancing Script', cursive;
+  font-family: cursive;;
 }
 
 #subNav .navbar-brand.active, #subNav .navbar-brand:active, #subNav .navbar-brand:focus, #subNav .navbar-brand:hover {
