@@ -40,7 +40,7 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  font-family: cursive;;
+  font-family: 'Alex Brush', cursive;;
 }
 
 section {
@@ -137,7 +137,7 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
   color: white;
-  font-family: cursive;;
+  font-family: 'Alex Brush', cursive;;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -328,7 +328,7 @@ header.subpage .intro-text .intro-heading {
 
 #subNav .navbar-brand {
   color: white;
-  font-family: cursive;;
+  font-family: 'Alex Brush', cursive;;
 }
 
 #subNav .navbar-brand.active, #subNav .navbar-brand:active, #subNav .navbar-brand:focus, #subNav .navbar-brand:hover {
