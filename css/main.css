@@ -32,13 +32,9 @@ a:hover {
 }
 
 #storyPic {
-  background-color: #212529;
-  background-image: url("../img/site/Picture1.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-
+  width:auto;
+  height:auto;
+  max-width: 100%;
 
 }
 
