@@ -714,7 +714,7 @@ header.subpage .intro-text .intro-heading {
   .timeline > li .timeline-image {
     width: 250px;
     height: 250px;
-    margin-left: -140px;
+    margin-left: -135px;
     object-fit: cover;
   }
 
