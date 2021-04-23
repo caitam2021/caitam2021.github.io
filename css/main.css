@@ -216,7 +216,15 @@ header.masthead {
   background-size: cover;
 }
 
+@media (max-width: 768px) {
+  header.masthead {
 
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+}
 
 header.masthead .intro-text {
   padding-top: 200px;
@@ -250,6 +258,7 @@ header.masthead .intro-text .intro-heading {
     font-size: 45px;
     font-style: regular;
     line-height: 45px;
+    margin-top: 60px;
     margin-bottom: 20px;
     font-family: 'Alex Brush', cursive;
   }
@@ -792,13 +801,21 @@ padding: 0 100px 20px 20px;
 
 /* Photo Gallery */
 
+
+
+
 .flex-gallery ul {
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
+  list-style-type: none;
+  /* Remove bullets */
+  padding: 0;
+  /* Remove padding */
+  margin: 0;
+  /* Remove margins */
 }
+
+
 
 .flex-gallery li {
   height: 40vh;
@@ -814,6 +831,8 @@ padding: 0 100px 20px 20px;
   min-width: 100%;
   object-fit: cover;
   vertical-align: bottom;
+  border: 2px solid #F8F9FA;
+
 }
 
 @media (max-aspect-ratio: 1/1) {
@@ -837,6 +856,7 @@ padding: 0 100px 20px 20px;
     height: auto;
     width: 100%;
   }
+
   .flex-gallery img {
     width: 100%;
     max-height: 75vh;
