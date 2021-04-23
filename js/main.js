@@ -55,7 +55,7 @@
     $(".navbar").removeClass("d-none");
   });
 
-  $(".img-modal").click(function () {
+  $(".img-modal").on('click',function () {
     $("#modal-img").attr("src", $(this).attr("src").replace("_Thumb", ""));
   });
 
