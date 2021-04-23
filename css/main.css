@@ -76,7 +76,7 @@ section h3.section-subheading {
 
 @media (min-width: 768px) {
   section {
-    padding: 75px 0;
+    padding: 50px 0;
   }
 }
 
@@ -554,6 +554,9 @@ header.subpage .intro-text .intro-heading {
   opacity: 0.3;
 }
 
+.modal-dialog{text-align:center;}
+.modal-content{display:inline-block;}
+
 .portfolio-modal .close-modal .lr {
   /* Safari and Chrome */
   z-index: 1051;
@@ -579,6 +582,10 @@ header.subpage .intro-text .intro-heading {
   background-color: #212529;
 }
 
+
+.modal-body {
+  max-height: 80vh; overflow-y: auto;
+}
 
 /* Timeline */
 .timeline {

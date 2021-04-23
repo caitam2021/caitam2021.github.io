@@ -65,7 +65,7 @@
             <a class="nav-link js-scroll-trigger" href="#our-story">Nuestra Historia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#gallery">Galeria</a>
+            <a class="nav-link js-scroll-trigger" href="#gallery">Galería</a>
           </li>
           <!--<li class="nav-item">
         <a class="nav-link js-scroll-trigger" href="#travel">Travel</a>
@@ -175,29 +175,30 @@
         <div class="col-lg-12 text-center">
           <h1 class="intro-lead-in">Nuestra Historia</h1>
         </div>
-        <div class="row">
-          <div class="col-lg-6 col-md-12 col-sm-12 text-center">
-            <p class="section-subheading text-muted ">
-              Nuestra historia comienza en otoño de 2015 cuando ambos estábamos haciendo nuestra maestría en Washington
-              DC.
-              <br /><br />
-              Un día coincidimos en la aplicación de citas "Bumble“ y después de un par de días de enviar mensajes de
-              texto sin parar, decidimos conocernos en persona en una cafetería llamada “Tryst” (cita en inglés) y la
-              conexión fue instantánea.
-              <br /><br />
-              Todo estaba saliendo muy bien, pero ambos teníamos que estudiar para el día siguiente, sin embargo,
-              ninguno de los dos quería irse. Así que nuestra cita se convirtió en una sesión de estudio improvisada. Y
-              así comenzó esta historia.
-              <br /><br />
-              Ahora, después de 5 años llenos de aventuras, estamos listos para el próximo capítulo juntos y estamos
-              emocionados por celebrarlo con todos ustedes!
-              <br /><br />
-            </p>
-          </div>
-          <div class="col-lg-6 col-md-4 col-sm-12">
-            <img id="storyPic" src="img/new/Picture3.jpg" alt="">
-          </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+          <p class="section-subheading text-muted ">
+            Nuestra historia comienza en otoño de 2015 cuando ambos estábamos haciendo nuestra maestría en Washington
+            DC.
+            <br /><br />
+            Un día coincidimos en la aplicación de citas "Bumble“ y después de un par de días de enviar mensajes de
+            texto sin parar, decidimos conocernos en persona en una cafetería llamada “Tryst” (cita en inglés) y la
+            conexión fue instantánea.
+            <br /><br />
+            Todo estaba saliendo muy bien, pero ambos teníamos que estudiar para el día siguiente, sin embargo,
+            ninguno de los dos quería irse. Así que nuestra cita se convirtió en una sesión de estudio improvisada. Y
+            así comenzó esta historia.
+            <br /><br />
+            Ahora, después de 5 años llenos de aventuras, estamos listos para el próximo capítulo juntos y estamos
+            emocionados por celebrarlo con todos ustedes!
+            <br /><br />
+          </p>
         </div>
+        <div class="col-lg-6 col-md-4 col-sm-12">
+          <img id="storyPic" src="img/new/Picture3.jpg" alt="">
+        </div>
+      </div>
 
   </section>
 
@@ -307,37 +308,45 @@
   </section>
 
   <section class="bg-light" id='gallery'>
-    <div class="container flex-gallery">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="intro-lead-in">Galería</h1>
+      </div>
+    </div>
+    <div class="container flex-gallery" data-toggle="modal" data-target="#portfolio-modal">
+
       <ul>
         <li>
-          <img src="img/photogallery/dcp1.jpg">
+          <img class="img-modal" src="img/photogallery/dcp1.jpg" id="dcp1">
         </li>
         <li>
-          <img src="img/photogallery/dcp2.jpg">
+          <img class="img-modal" src="img/photogallery/dcp2.jpg" id="dcp2">
         </li>
         <li>
-          <img src="img/photogallery/dcp3.jpg">
+          <img class="img-modal" src="img/photogallery/dcp3.jpg" id="dcp3">
         </li>
         <li>
-          <img src="img/photogallery/dcp4.jpg">
+          <img class="img-modal" src="img/photogallery/dcp4.jpg" id="dcp4">
         </li>
         <li>
-          <img src="img/photogallery/dcp5.jpg">
+          <img class="img-modal" src="img/photogallery/dcp5.jpg" id="dcp5">
         </li>
         <li>
-          <img src="img/photogallery/dcp6.jpg">
+          <img class="img-modal" src="img/photogallery/dcp6.jpg" id="dcp6">
         </li>
         <li>
-          <img src="img/photogallery/dcp7.jpg">
+          <img class="img-modal" src="img/photogallery/dcp7.jpg" id="dcp7">
         </li>
         <li>
-          <img src="img/photogallery/dcp8.jpg">
+          <img class="img-modal" src="img/photogallery/dcp8.jpg" id="dcp8">
         </li>
         <li>
-          <img src="img/photogallery/dcp9.jpg">
+          <img class="img-modal" src="img/photogallery/dcp9.jpg" id="dcp9">
         <li>
-          <img src="img/photogallery/dcp10.jpg">
+          <img class="img-modal" src="img/photogallery/dcp10.jpg" id="dcp10">
         </li>
+        <li></li>
+
       </ul>
     </div>
   </section>
@@ -453,7 +462,28 @@
     </div>
   </section>
 
-
+  <!-- Modal For Gallery-->
+  <div class="modal fade" id="portfolio-modal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <img id="modal-img" class="img-responsive w-100" src="img/photogallery/dcp1.jpg">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 

@@ -1,33 +1,41 @@
-(function($) {
+(function ($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+    if (
+      location.pathname.replace(/^\//, "") ==
+        this.pathname.replace(/^\//, "") &&
+      location.hostname == this.hostname
+    ) {
       var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
       if (target.length) {
-        $('html, body').animate({
-          scrollTop: (target.offset().top - 54)
-        }, 1000, "easeInOutExpo");
+        $("html, body").animate(
+          {
+            scrollTop: target.offset().top - 54,
+          },
+          1000,
+          "easeInOutExpo"
+        );
         return false;
       }
     }
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
+  $(".js-scroll-trigger").click(function () {
+    $(".navbar-collapse").collapse("hide");
   });
 
   // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#mainNav',
-    offset: 56
+  $("body").scrollspy({
+    target: "#mainNav",
+    offset: 56,
   });
 
   // Collapse Navbar
-  var navbarCollapse = function() {
+  var navbarCollapse = function () {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
@@ -40,15 +48,18 @@
   $(window).scroll(navbarCollapse);
 
   // Hide navbar when modals trigger
-  $('.portfolio-modal').on('show.bs.modal', function(e) {
+  $(".gallery-modal").on("show.bs.modal", function (e) {
     $(".navbar").addClass("d-none");
-  })
-  $('.portfolio-modal').on('hidden.bs.modal', function(e) {
+  });
+  $(".gallery-modal").on("hidden.bs.modal", function (e) {
     $(".navbar").removeClass("d-none");
-  })
+  });
 
+  $(".img-modal").click(function () {
+    $("#modal-img").attr("src", $(this).attr("src").replace("_Thumb", ""));
+  });
 
-  $(".ajaxForm").submit(function(e){
+  $(".ajaxForm").submit(function (e) {
     e.preventDefault();
     var href = $(this).attr("action");
     $.ajax({
@@ -56,14 +67,13 @@
       dataType: "json",
       url: href,
       data: $(this).serialize(),
-      success: function(response){
-        if(response.status == "success"){
+      success: function (response) {
+        if (response.status == "success") {
           alert("We received your submission, thank you!");
-        }else{
+        } else {
           alert("An error occured: " + response.message);
         }
-      }
+      },
     });
   });
-
 })(jQuery); // End of use strict
