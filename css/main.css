@@ -505,23 +505,15 @@ header.subpage .intro-text .intro-heading {
 }
 
 /*Modal view changes*/
-#modal-img  {
+#modal-img {
   max-height: 65vh;
+  display: block;
+  margin: auto;
+  max-width: 100%;
 }
 
 
 
-@media (orientation: landscape) {
-  #modal-img  {
-    height: 100%;
-  }
-}
-
-@media (orientation: portrait) {
-  #modal-img  {
-    width: 100%;
-  }
-}
 
 
 .modal-dialog {
