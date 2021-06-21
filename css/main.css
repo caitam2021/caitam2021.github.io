@@ -512,16 +512,13 @@ header.subpage .intro-text .intro-heading {
   max-width: 100%;
 }
 
-
-
-
-
 .modal-dialog {
   text-align: center;
 }
 
 .modal-content {
   display: inline-block;
+  margin: auto;
 }
 
 
