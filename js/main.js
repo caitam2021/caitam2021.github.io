@@ -55,12 +55,6 @@
     $(".navbar").removeClass("d-none");
   });
 
-  $(".img-modal").on('click',function () {
-    //var url = "url('"+$(this).attr("src").replace("_Thumb", "");+"')";
-    $("#modal-img").attr("src", $(this).attr("src").replace("_Thumb", ""));
-    //$("#modal-img").css("background-image",url);
-  });
-
   $(".ajaxForm").submit(function (e) {
     e.preventDefault();
     var href = $(this).attr("action");
