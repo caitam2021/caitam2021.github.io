@@ -934,3 +934,8 @@ ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
   background-color: white;
 }
+
+
+ol.tips li {
+  margin: 0 0 3px 0;
+}
