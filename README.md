@@ -1,2 +1,1 @@
-## jvald043.github.io
-Site dedicated to the Wedding of Jonathan and Ivet
+Site dedicated to the Wedding of John and Andrea
